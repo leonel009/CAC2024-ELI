@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="../Estilo/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="cajon">
+
+        <!-- Header / NavBar - Icono para volver al inicio, Buscadopr y Login -->
+
+        <header class="header">
+            <nav class="cajon-header">
+                <div class="contenedor-logo">
+                    <a href="index.html"><img src="../imagenes/iconos/icono libro.svg" alt="icono libro" class="logo"></a>
+                    <h1 class="titulo-header">El Libro Adecuado</h1>
+                </div>
+                <div class="container">
+                    <input type="text" placeholder="Buscar...">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <a class="logo1" href="usuario.html"><img src="../imagenes/iconos/user-regular.svg" alt="icono libro" class="logo"><h4 class="color1">Login</h4></a>
+            
+            
+            </nav>
+            
+        </header>
+            
+        </header>
+
+        <!-- Aside - Lista de Categorias-->
+
+        <aside class="aside">
+            <div class="categorias">
+                <h2>Categorias</h2>
+                <ul>
+                    <li> 
+                        <div class="selecionada">
+                            <a href="categorias/auto_ayuda.html"><h3><img src="../imagenes/iconos/mano-sosteniendo-agua.svg" alt="mano-sosteniendo-agua ayuda" class="logo-aside"> Auto Ayuda</h3></a>
+                        </div> 
+                    </li>
+                    <li> 
+                        <div class="selecionada">
+                        <a href="categorias/ficcion.html"><h3><img src="../imagenes/iconos/almuerzo-cohete.svg" alt="ficcion almuerzo-cohete" class="logo-aside"> Ficcion</h3></a>
+                        </div>    
+                    </li>
+                    <li> 
+                        <div class="selecionada">
+                            <a href="categorias/infantil.html"><h3><img src="../imagenes/iconos/piezas-de-rompecabezas.svg" alt="puzzle infantil" class="logo-aside"> Infantil</h3></a>
+                        </div> 
+                    </li>
+                    <li> 
+                        <div class="selecionada">
+                            <a href="categorias/novela.html"><h3><img src="../imagenes/iconos/libro-corazon.svg" alt="novela corazon libro" class="logo-aside"> Novela</h3></a>
+                        </div>     
+                    </li>
+                    <li> 
+                        <div class="selecionada">
+                            <a href="categorias/psicologia.html"><h3><img src="../imagenes/iconos/cerebro-del-lado-de-la-cabeza.svg" alt="cerebro psicologia mente" class="logo-aside"> Psicologia</h3></a>
+                        </div>    
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main - contenido -->
+            
+        <main class="main">
+           
+                <div class="contenedor-contacto">
+                    <h1>Formulario de contacto</h1>
+            
+                    <form action="mailto:tucorreo@ejemplo.com" method="post">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+            
+                        <label for="telefono">Telefono:</label>
+                        <input type="text" id="telefono" name="telefono" required>
+
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+            
+            
+                        <label for="asunto">Asunto:</label>
+                        <input type="text" id="asunto" name="asunto" required>
+            
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            
+                        <button type="submit" class="boton-form">Enviar</button>
+                    </form>
+                </div>
+        </main>
+        
+        <!-- Footer - Pie de pagina -->
+
+        <footer class="footer">
+            <div class="panel-footer">
+    
+                <a href="contacto.html"><h3>Contactanos</h3></a>
+                <a href="quienes_somos.html"><h3>Sobre nosotros</h3></a>
+                </div>
+        </footer> 
+    </div>
+    
+    
+
+    <!--script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("scroll",window.scrollY>0);
+
+        })
+    </script-->
+
+</body>
+
+</html>

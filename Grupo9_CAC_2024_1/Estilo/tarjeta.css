@@ -1,0 +1,56 @@
+.tarjeta {
+    width: auto;
+    max-height: 3000px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    display: grid;
+    grid-template-areas: 
+    'imagen titulo titulo titulo'
+    'imagen genero genero genero'
+    'imagen descripcion descripcion descripcion'
+    'imagen precio precio precio';
+
+}
+
+.imagen {
+    flex: 0 0 auto; /* la imagen no crecerá ni se reducirá */
+    margin-right: 20px;
+    grid-area: 'imagen';
+}
+
+.imagen img {
+    width: 200px; /* ajusta el tamaño de la imagen según sea necesario */
+    border-radius: 5%; /* para que la imagen sea redondeada */
+}
+
+.titulo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    grid-area: 'titulo';
+}
+
+.descripcion {
+    padding: 0;
+    grid-area: 'descripcion';
+}
+
+.genero {
+    margin-bottom: 10px;
+    grid-area: 'genero';
+}
+
+.precio{
+    grid-area: 'precio';
+}
+
+span {
+    font-weight: bold;
+}
+
+.descuento{
+    background-color: gold;
+}
