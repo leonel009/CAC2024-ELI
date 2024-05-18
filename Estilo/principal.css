@@ -1,0 +1,59 @@
+@import url("normalizacion.css");
+@import url("header.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+.cajon {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80px 200px 90px;
+    grid-template-areas: 
+    
+    "Header Header Header"
+    "Aside Main Main"  
+    "Footer Footer Footer"
+    ;
+    gap: 20px; 
+}
+
+.header {
+    background-color: salmon;
+    grid-area: Header;
+    }
+.main {background-color: lightgreen; grid-area: Main;}
+.aside {background-color: gold; grid-area: Aside;}
+.footer {background-color: beige; grid-area: Footer;}
+
+/* ----------------------------------------------------------------------- */
+
+.cajon-header{
+    display: flex;
+    height: 100vh;
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.caja-header{
+    width: 120px;
+    height: 120px;
+    background-color: skyblue;
+    border: 2px solid black;
+    top: 50%;
+    transform: translate(0,-50%);
+    /**/
+}

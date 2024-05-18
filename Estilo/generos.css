@@ -1,0 +1,24 @@
+.ficcion{
+    background-color: violet;
+    
+}
+
+.infantil{
+    background-color: #3b7eb4;
+}
+
+.auto_ayuda{
+    background-color: rgb(190, 63, 63);
+}
+
+.novela{
+    background-color: orange;
+}
+
+.psicologia{
+    background-color: cyan;
+}
+
+.fuente-genero{
+    font-weight: bold;
+}

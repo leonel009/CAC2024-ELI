@@ -1,0 +1,15 @@
+.cajon-main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+article, aside{
+    justify-content: center;
+    text-align: center;
+}
+
+.imagen {
+    max-width: 250px;
+    max-height: 250px;
+}
