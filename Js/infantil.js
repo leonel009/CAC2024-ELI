@@ -40,3 +40,4 @@ function obtenerLibrosInf(){
     })
     //libros = JSON.parse(JSON.stringify(data))
 }
+
