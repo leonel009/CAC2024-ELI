@@ -50,11 +50,6 @@ font-style: normal;
   grid-template-areas: 
   "Header Header Header Header"
   "Aside Main Main Main"
-  "Aside Main Main Main"   
-  "Aside Main Main Main"
-  "Aside Main Main Main"
-  "Aside Main Main Main"
-  "Aside Main Main Main"
   "Footer Footer Footer Footer"
   ;
   gap: 20px; 
