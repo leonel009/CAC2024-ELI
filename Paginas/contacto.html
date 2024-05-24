@@ -80,21 +80,49 @@
                         <label for="email">Correo electrónico:</label>
                         <input type="email" id="email" name="email" required>
             
-            
                         <label for="asunto">Asunto:</label>
-                        <input type="text" id="asunto" name="asunto" required>
+                        <select id="asunto" name="asunto" required>
+                          <option value="">Seleccione un asunto</option>
+                          <option value="consulta">Consulta general</option>
+                          <option value="sugerencia">Sugerencia</option>
+                          <option value="reclamo">Reclamo</option>
+                        </select>
+                                                
             
                         <label for="mensaje">Mensaje:</label>
                         <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                        <label for="medioContacto">¿Cómo prefiere ser contactado?</label>
+    
+                        <div class="cajita-contacto">
+                            <ul>
+                                
+                                <li>
+                                    
+                                    <label for="emailContacto">Correo electrónico<input type="radio" id="emailContacto" name="medioContacto" value="email" checked></label>
+                                </li>
+                                    
+
+                                <li>
+                                    
+                                    <label for="telefonoContacto">Teléfono<input type="radio" id="telefonoContacto" name="medioContacto" value="telefono"></label>
+                                </li>
+                                    
+                            </ul>  
+                        </div>
             
                         <button type="submit" class="boton-form">Enviar</button>
                     </form>
                 </div>
         </main>
         
+        <script src="../../Js/contacto.js">
+        
+        </script>
+
         <!-- Footer - Pie de pagina -->
 
-        <footer class="footer">
+      <footer class="footer">
             <div class="panel-footer">
     
                 <a href="contacto.html"><h3>Contactanos</h3></a>
@@ -102,6 +130,7 @@
                 </div>
         </footer> 
     </div>
+
     
     
 
