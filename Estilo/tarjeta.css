@@ -1,56 +1,58 @@
-.tarjeta {
-    width: auto;
+body {
+    font-family: sans-serif;
+}
+
+.contenedor-contacto {
+    max-width: 600px;
     max-height: auto;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    display: grid;
-    grid-template-areas: 
-    'imagen titulo titulo titulo'
-    'imagen genero genero genero'
-    'imagen descripcion descripcion descripcion'
-    'imagen precio precio precio';
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: lightseagreen;
+
+
 
 }
 
-.imagen {
-    flex: 0 0 auto; /* la imagen no crecerá ni se reducirá */
-    margin-right: 20px;
-    grid-area: 'imagen';
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.imagen img {
-    width: 200px; /* ajusta el tamaño de la imagen según sea necesario */
-    border-radius: 5%; /* para que la imagen sea redondeada */
+label {
+    display: block;
+    margin-bottom: 5px;
 }
 
-.titulo {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    grid-area: 'titulo';
+input,
+textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
-.descripcion {
-    padding: 0;
-    grid-area: 'descripcion';
+.boton-form {
+    background-color: #4CAF50;
+    color: white;
+    padding: 2px 20px;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    width: 80px;
 }
 
-.genero {
-    margin-bottom: 10px;
-    grid-area: 'genero';
+.cajita-contacto li {
+    display: flex; 
+    align-items: center; 
+}
+  
+.cajita-contacto input[type="radio"] {
+    margin-right: 10px; /* Añadir espacio a la derecha del botón */
 }
 
-.precio{
-    grid-area: 'precio';
+.cajita-contacto li label {
+    display: inline-block;
+    vertical-align: middle; /* Alinear verticalmente */
 }
-
-span {
-    font-weight: bold;
-}
-
-.descuento{
-    background-color: gold;
-}
+  
